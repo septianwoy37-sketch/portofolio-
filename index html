@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio | Langit</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0d0d0d;
+    color:white;
+    overflow-x:hidden;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 10%;
+    position:fixed;
+    width:100%;
+    background:rgba(0,0,0,.7);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:700;
+    color:#00aaff;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#00aaff;
+}
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.hero h1{
+    font-size:4rem;
+}
+
+.hero h1 span{
+    color:#00aaff;
+}
+
+.hero p{
+    margin-top:15px;
+    color:#aaa;
+    max-width:700px;
+}
+
+.btn{
+    margin-top:30px;
+    padding:15px 35px;
+    background:#00aaff;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #00aaff;
+}
+
+section{
+    padding:100px 10%;
+}
+
+.title{
+    font-size:2.5rem;
+    margin-bottom:40px;
+    text-align:center;
+    color:#00aaff;
+}
+
+.about{
+    text-align:center;
+    max-width:800px;
+    margin:auto;
+    color:#bbb;
+}
+
+.skills{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+}
+
+.skill{
+    background:#141414;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+    transition:.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 15px rgba(0,170,255,.4);
+}
+
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.project{
+    background:#141414;
+    border-radius:15px;
+    overflow:hidden;
+    transition:.3s;
+}
+
+.project img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.project-content{
+    padding:20px;
+}
+
+.project:hover{
+    transform:translateY(-8px);
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#00aaff;
+    text-decoration:none;
+}
+
+footer{
+    text-align:center;
+    padding:30px;
+    color:#777;
+    border-top:1px solid #222;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:2.5rem;
+}
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+<div class="logo">Langit.</div>
+
+<ul>
+<li><a href="#about">About</a></li>
+<li><a href="#skills">Skills</a></li>
+<li><a href="#portfolio">Portfolio</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Halo, Saya <span>Langit</span></h1>
+<p>
+Membangun proyek digital, website modern, dan solusi kreatif
+dengan desain yang elegan dan profesional.
+</p>
+
+<a href="#portfolio" class="btn">Lihat Portfolio</a>
+</section>
+
+<section id="about">
+<h2 class="title">Tentang Saya</h2>
+<div class="about">
+Saya adalah seorang kreator digital yang berfokus pada pengembangan website,
+desain modern, dan solusi berbasis teknologi dengan tampilan premium.
+</div>
+</section>
+
+<section id="skills">
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">
+<h3>HTML & CSS</h3>
+<p>Website modern dan responsif.</p>
+</div>
+
+<div class="skill">
+<h3>JavaScript</h3>
+<p>Interaksi dinamis dan modern.</p>
+</div>
+
+<div class="skill">
+<h3>UI/UX Design</h3>
+<p>Desain elegan dan profesional.</p>
+</div>
+
+<div class="skill">
+<h3>Trading & Finance</h3>
+<p>Analisis dan edukasi pasar.</p>
+</div>
+
+</div>
+</section>
+
+<section id="portfolio">
+<h2 class="title">Portfolio</h2>
+
+<div class="projects">
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f">
+<div class="project-content">
+<h3>Website Forex</h3>
+<p>Platform edukasi trading forex modern.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71">
+<div class="project-content">
+<h3>Dashboard Finance</h3>
+<p>Dashboard analisis data finansial.</p>
+</div>
+</div>
+
+<div class="project">
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+<div class="project-content">
+<h3>Portfolio Website</h3>
+<p>Website personal dengan desain premium.</p>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 class="title">Contact</h2>
+
+<div class="contact">
+<p>Email: contact@email.com</p>
+<p>Instagram: @username</p>
+<p>WhatsApp: +62 xxx xxxx xxxx</p>
+</div>
+</section>
+
+<footer>
+© 2026 Langit Portfolio. All Rights Reserved.
+</footer>
+
+</body>
+</html>
